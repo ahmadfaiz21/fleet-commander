@@ -26,10 +26,7 @@ export default function Map({ refreshFlag,activeButton,forwardedRef,dbRef,data  
     platform = new H.service.Platform({
       apikey: "ykV0LNTyrAZsQSzEcTasWIm_E2bo8fr5wrKFYaGUQPY", // Replace with your HERE API Key
     });
-        //ykV0LNTyrAZsQSzEcTasWIm_E2bo8fr5wrKFYaGUQPY
-    // const defaultLayers = platform.createDefaultLayers({
-    //   layers: ['raster', 'terrain', 'labels'], // Add 'raster' layer
-    // });
+       
     const defaultLayers = platform.createDefaultLayers({
       layers: ['raster', 'terrain', 'labels'], // Add 'raster' layer
     });
@@ -128,14 +125,13 @@ export default function Map({ refreshFlag,activeButton,forwardedRef,dbRef,data  
       if(dataRef.current){
         markerlatitude=dataRef.current.lat;
         markerlongitude=dataRef.current.long;
-        // markerlatitude = 3.08527; //101.56249
-        // markerlongitude = 101.56249;
+       
       }
       MakeMarker(markerlatitude,markerlongitude);
       AddMarkerOnMap(map,marker);
       
       markerpos =marker.getGeometry();
-      // //23
+      
       //reCenterMarker(markerpos);
     }
 
@@ -181,9 +177,9 @@ export default function Map({ refreshFlag,activeButton,forwardedRef,dbRef,data  
 
     // Clear the interval when the component is unmounted or when the effect is cleaned up
     return () => clearInterval(interval);
-  }, []); // Empty dependency array ensures the effect runs only once on component mount
+  }, []); 
   return (<>
   
-    <div ref={mapRef} style={{ width: '100%', height: '1200px' }} />
+    <div ref={mapRef} style={{ width: '100%', height: '1140px' }} />
   </>);
 }

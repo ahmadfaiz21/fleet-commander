@@ -1,0 +1,40 @@
+/* WrongPasswordWarning.module.css */
+
+.container {
+    position: fixed;
+    top: 25%;
+    left: 37%;
+    width: 25%;
+    height: 28%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* This creates a shadow effect */
+    margin: 20px;
+    opacity: 100;
+
+    
+  }
+  
+  /* styles/Login.module.css */
+
+.loginContainer {
+  display: flex;
+  min-height: 100vh;
+}
+
+.background {
+  flex: 1;
+  background: linear-gradient(to right, #009af3, #2B32B2);
+  animation: aurora 10s infinite alternate;
+}
+
+
+
+@keyframes aurora {
+  0% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
