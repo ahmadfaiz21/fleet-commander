@@ -180,6 +180,6 @@ export default function Map({ refreshFlag,activeButton,forwardedRef,dbRef,data  
   }, []); 
   return (<>
   
-    <div ref={mapRef} style={{ width: '100%', height: '1300px' }} />
+    <div ref={mapRef} style={{ width: '100%', height: '1240px' }} />
   </>);
 }
