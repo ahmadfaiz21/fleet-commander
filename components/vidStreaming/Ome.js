@@ -22,7 +22,7 @@ export default function AsyncOvenPlayer() {
             // Set the type to 'webrtc'
             type: 'webrtc',
             // Set the file to WebRTC Signaling URL with OvenMediaEngine 
-            file: 'ws://192.168.0.102:5754/app/stream'
+            file: 'wss://192.168.0.102:5754/app/stream'
           }
         ]
         
