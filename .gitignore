@@ -35,3 +35,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .env
+ca_bundle.crt
+certificate.crt
+private.key
