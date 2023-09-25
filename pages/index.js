@@ -7,7 +7,8 @@ import Ws from '../helper/Websocket';
 
 import { useRouter } from 'next/router';
 
-const connect = "ws://103.233.1.179:3000"
+// const connect = "ws://103.233.1.179:3000"
+const connect = "wss://uav.ikramatic.com.my:3334/app/stream"
 
 const Homepage =()=>{
   const router = useRouter();
